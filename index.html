@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container" id="pantalla-inicial">
+
+        <h1 class="title">Pasión por el Fútbol</h1>
+
+        <div class="sections-wrapper">
+
+            <div class="section section-left">
+
+                <div class="subtitle">Qué es Fútbol</div>
+
+                <div class="description">El fútbol, también conocido como balompié, 
+                es el deporte más popular del mundo, practicado por más de 250 millones de personas 
+                en más de 200 países y dependencias, lo que lo convierte en el deporte más popular del mundo. 
+                Se juega con dos equipos de once jugadores que intentan introducir un balón en la portería contraria, 
+                utilizando principalmente los pies. La emoción del gol, la habilidad de los jugadores y 
+                la pasión de los aficionados hacen de este deporte un espectáculo inigualable.</p>
+                </div>
+
+                <a href="https://es.wikipedia.org/wiki/F%C3%BAtbol" target="_blank" class="link-ver-mas">Ver mas</a>
+
+            </div>
+
+            <div class="section section-right">
+
+                <div class="subtitle">¡Quiz de Fútbol!</div>
+
+                <div class="trivia-description">¿Estás listo para un desafío? Ponte a prueba con nuestra 
+                trivia de preguntas sobre fútbol. ¡Demuestra cuánto sabes!</div>
+
+                <button class="button" onclick="comenzarJuegoMundial()">Comenzar</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container pantalla-columna" id="pantalla-juego-mundial" style="display: none;">
+
+        <div class="section">
+
+            <h1 class="title">¡Quiz de Fútbol!</h1>
+
+            <h2 class="subtitle" id="pregunta">Pregunta aquí</h2>
+
+            <div id="opciones"></div>
+            
+        </div>
+    </div>
+
+
+    <div class="container pantalla-columna" id="pantalla-final" style="display: none;">
+        
+        <div class="section">
+
+            <h1 class="title">¡Juego terminado!</h1>
+
+            <div class="subtitle">Resultados</div>
+
+            <div id="cantidadAcertadas"></div>
+
+            <button class="button" onclick="location.reload()">Volver a jugar</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
